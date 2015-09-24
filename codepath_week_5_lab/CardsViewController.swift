@@ -22,6 +22,10 @@ class CardsViewController: UIViewController {
         }
     }
 
+    @IBAction func onCardImageTapGesture(sender: UITapGestureRecognizer) {
+        performSegueWithIdentifier("profileSegue", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cardView = CardImageView(frame: CGRectMake(0, 65, view.bounds.width, 200))

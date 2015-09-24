@@ -27,11 +27,15 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="47q-Wd-byB" appends="YES" id="mVF-WP-xPs"/>
+                                    <outletCollection property="gestureRecognizers" destination="bWm-Ng-kDc" appends="YES" id="q3d-xz-kVR"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="lf1-le-01g" kind="modal" identifier="profileSegue" id="yQ9-sQ-rfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="47q-Wd-byB">
@@ -39,12 +43,38 @@
                         <action selector="onCardImagePanGesture:" destination="BYZ-38-t0r" id="q4E-Gh-xQx"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="bWm-Ng-kDc">
+                    <connections>
+                        <action selector="onCardImageTapGesture:" destination="BYZ-38-t0r" id="cKh-HY-DEQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="129" y="321"/>
+            <point key="canvasLocation" x="51" y="321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xy3-xl-9Nv">
+            <objects>
+                <viewController id="lf1-le-01g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Qr-DF-5XK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" id="DFJ-fU-QzH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRh-4x-EuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="321"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
     </resources>
 </document>

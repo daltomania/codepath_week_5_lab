@@ -16,6 +16,7 @@
 		9D8418D91BB36FAD00F7F33E /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D8418DB1BB37A7000F7F33E /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8418DA1BB37A7000F7F33E /* CardImageView.xib */; settings = {ASSET_TAGS = (); }; };
 		9D8418DE1BB37AC400F7F33E /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418DD1BB37AC400F7F33E /* CardImageView.swift */; settings = {ASSET_TAGS = (); }; };
+		9D8418E01BB3837300F7F33E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418DF1BB3837300F7F33E /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		9D8418DA1BB37A7000F7F33E /* CardImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
 		9D8418DD1BB37AC400F7F33E /* CardImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		9D8418DF1BB3837300F7F33E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */,
+				9D8418DF1BB3837300F7F33E /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				9D8418D91BB36FAD00F7F33E /* CardsViewController.swift in Sources */,
 				9D8418DE1BB37AC400F7F33E /* CardImageView.swift in Sources */,
+				9D8418E01BB3837300F7F33E /* ProfileViewController.swift in Sources */,
 				9D8418AA1BB36CF600F7F33E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
