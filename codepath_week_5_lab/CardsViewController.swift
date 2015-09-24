@@ -13,18 +13,18 @@ class CardsViewController: UIViewController {
     var imageOriginalCenter: CGPoint!
 
     @IBAction func onCardImagePanGesture(sender: UIPanGestureRecognizer) {
-            if sender.state == UIGestureRecognizerState.Began {
-                imageOriginalCenter = cardView.center
-            } else if sender.state == UIGestureRecognizerState.Changed {
-                cardView.center = CGPoint(x: imageOriginalCenter.x + sender.translationInView(view).x, y: imageOriginalCenter.y + sender.translationInView(view).y)
-            } else if sender.state == UIGestureRecognizerState.Ended {
-                cardView.center = imageOriginalCenter
-            }
+        if sender.state == UIGestureRecognizerState.Began {
+            imageOriginalCenter = cardView.center
+        } else if sender.state == UIGestureRecognizerState.Changed {
+            cardView.center = CGPoint(x: imageOriginalCenter.x + sender.translationInView(view).x, y: imageOriginalCenter.y + sender.translationInView(view).y)
+        } else if sender.state == UIGestureRecognizerState.Ended {
+            cardView.center = imageOriginalCenter
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardView = CardImageView(frame: CGRectMake(0, 20, view.bounds.width, 200))
+        cardView = CardImageView(frame: CGRectMake(0, 65, view.bounds.width, 200))
         cardView.image = UIImage(named: "ryan")
         view.addSubview(cardView)
     }
