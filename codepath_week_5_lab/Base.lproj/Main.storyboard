@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="51" y="321"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Xy3-xl-9Nv">
             <objects>
-                <viewController id="lf1-le-01g" sceneMemberID="viewController">
+                <viewController id="lf1-le-01g" customClass="ProfileViewController" customModule="codepath_week_5_lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Qr-DF-5XK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +63,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="oYf-IF-miy" customClass="CardImageView" customModule="codepath_week_5_lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="73" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

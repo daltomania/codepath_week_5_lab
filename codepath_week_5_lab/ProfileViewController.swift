@@ -9,9 +9,14 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    var cardView: CardImageView!
+    var image: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardView = CardImageView(frame: CGRectMake(0, 65, view.bounds.width, 200))
+        cardView.image = image
+        view.addSubview(cardView)
     }
 
     override func didReceiveMemoryWarning() {
