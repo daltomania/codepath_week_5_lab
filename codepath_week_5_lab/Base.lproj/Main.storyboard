@@ -20,25 +20,23 @@
                                 <rect key="frame" x="0.0" y="460" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" id="3Cc-fS-OPa">
-                                <rect key="frame" x="0.0" y="73" width="320" height="367"/>
+                            <view contentMode="scaleToFill" id="y2F-3N-gzD" customClass="CardImageView" customModule="codepath_week_5_lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="73" width="320" height="379"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="B4Z-B8-QXJ" appends="YES" id="jsf-Ag-BC0"/>
+                                    <outletCollection property="gestureRecognizers" destination="47q-Wd-byB" appends="YES" id="mVF-WP-xPs"/>
                                 </connections>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="profileImageView" destination="3Cc-fS-OPa" id="JXV-yN-n4d"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="B4Z-B8-QXJ">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="47q-Wd-byB">
                     <connections>
-                        <action selector="onImagePanGesture:" destination="BYZ-38-t0r" id="nmY-My-UlZ"/>
+                        <action selector="onCardImagePanGesture:" destination="BYZ-38-t0r" id="q4E-Gh-xQx"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
@@ -48,6 +46,5 @@
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
-        <image name="ryan" width="449" height="514"/>
     </resources>
 </document>

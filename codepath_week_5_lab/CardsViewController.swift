@@ -9,21 +9,24 @@
 import UIKit
 
 class CardsViewController: UIViewController {
+    var cardView: CardImageView!
     var imageOriginalCenter: CGPoint!
 
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBAction func onImagePanGesture(sender: UIPanGestureRecognizer) {
-        if sender.state == UIGestureRecognizerState.Began {
-            imageOriginalCenter = profileImageView.center
-        } else if sender.state == UIGestureRecognizerState.Changed {
-            profileImageView.center = CGPoint(x: imageOriginalCenter.x + sender.translationInView(view).x, y: imageOriginalCenter.y + sender.translationInView(view).y)
-        } else if sender.state == UIGestureRecognizerState.Ended {
-            profileImageView.center = imageOriginalCenter
-        }
+    @IBAction func onCardImagePanGesture(sender: UIPanGestureRecognizer) {
+            if sender.state == UIGestureRecognizerState.Began {
+                imageOriginalCenter = cardView.center
+            } else if sender.state == UIGestureRecognizerState.Changed {
+                cardView.center = CGPoint(x: imageOriginalCenter.x + sender.translationInView(view).x, y: imageOriginalCenter.y + sender.translationInView(view).y)
+            } else if sender.state == UIGestureRecognizerState.Ended {
+                cardView.center = imageOriginalCenter
+            }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardView = CardImageView(frame: CGRectMake(0, 20, view.bounds.width, 200))
+        cardView.image = UIImage(named: "ryan")
+        view.addSubview(cardView)
     }
 
     override func didReceiveMemoryWarning() {

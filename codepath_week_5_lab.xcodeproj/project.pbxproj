@@ -14,6 +14,8 @@
 		9D8418BF1BB36CF600F7F33E /* codepath_week_5_labTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418BE1BB36CF600F7F33E /* codepath_week_5_labTests.swift */; };
 		9D8418CA1BB36CF600F7F33E /* codepath_week_5_labUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418C91BB36CF600F7F33E /* codepath_week_5_labUITests.swift */; };
 		9D8418D91BB36FAD00F7F33E /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D8418DB1BB37A7000F7F33E /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8418DA1BB37A7000F7F33E /* CardImageView.xib */; settings = {ASSET_TAGS = (); }; };
+		9D8418DE1BB37AC400F7F33E /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8418DD1BB37AC400F7F33E /* CardImageView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9D8418C91BB36CF600F7F33E /* codepath_week_5_labUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_week_5_labUITests.swift; sourceTree = "<group>"; };
 		9D8418CB1BB36CF600F7F33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		9D8418DA1BB37A7000F7F33E /* CardImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
+		9D8418DD1BB37AC400F7F33E /* CardImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		9D8418A81BB36CF600F7F33E /* codepath_week_5_lab */ = {
 			isa = PBXGroup;
 			children = (
+				9D8418DC1BB37A9600F7F33E /* Views */,
 				9D8418D71BB36F9900F7F33E /* View Controllers */,
 				9D8418A91BB36CF600F7F33E /* AppDelegate.swift */,
 				9D8418AD1BB36CF600F7F33E /* Main.storyboard */,
 				9D8418B01BB36CF600F7F33E /* Assets.xcassets */,
 				9D8418B21BB36CF600F7F33E /* LaunchScreen.storyboard */,
 				9D8418B51BB36CF600F7F33E /* Info.plist */,
+				9D8418DA1BB37A7000F7F33E /* CardImageView.xib */,
 			);
 			path = codepath_week_5_lab;
 			sourceTree = "<group>";
@@ -131,6 +137,14 @@
 				9D8418D81BB36FAD00F7F33E /* CardsViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9D8418DC1BB37A9600F7F33E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D8418DD1BB37AC400F7F33E /* CardImageView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 			files = (
 				9D8418B41BB36CF600F7F33E /* LaunchScreen.storyboard in Resources */,
 				9D8418B11BB36CF600F7F33E /* Assets.xcassets in Resources */,
+				9D8418DB1BB37A7000F7F33E /* CardImageView.xib in Resources */,
 				9D8418AF1BB36CF600F7F33E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8418D91BB36FAD00F7F33E /* CardsViewController.swift in Sources */,
+				9D8418DE1BB37AC400F7F33E /* CardImageView.swift in Sources */,
 				9D8418AA1BB36CF600F7F33E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +505,7 @@
 				9D8418D01BB36CF600F7F33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D8418D11BB36CF600F7F33E /* Build configuration list for PBXNativeTarget "codepath_week_5_labTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +514,7 @@
 				9D8418D31BB36CF600F7F33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D8418D41BB36CF600F7F33E /* Build configuration list for PBXNativeTarget "codepath_week_5_labUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +523,7 @@
 				9D8418D61BB36CF600F7F33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
