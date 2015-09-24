@@ -13,14 +13,12 @@ class CardsViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBAction func onImagePanGesture(sender: UIPanGestureRecognizer) {
-        let point = sender.locationInView(view)
-        let velocity = sender.velocityInView(view)
-        
         if sender.state == UIGestureRecognizerState.Began {
             imageOriginalCenter = profileImageView.center
         } else if sender.state == UIGestureRecognizerState.Changed {
             profileImageView.center = CGPoint(x: imageOriginalCenter.x + sender.translationInView(view).x, y: imageOriginalCenter.y + sender.translationInView(view).y)
         } else if sender.state == UIGestureRecognizerState.Ended {
+            profileImageView.center = imageOriginalCenter
         }
     }
     
